@@ -1,0 +1,23 @@
+\subsection{Machine Learning Downselection Criteria Justification} % Main appendix title
+
+\label{appendix:Machine_Learning_DS_Justifiaction} % For referencing this appendix elsewhere, use \ref{appendixA}
+
+\rhead{Appendix \ref{appendix:Machine_Learning_DS_Justifiaction}. \emph{Machine Learning Downselection Criteria Justification}} % This is for the header on each page - perhaps a shortened title
+
+\begin{table}[h!]
+    \caption{Machine Learning Downselection Criteria Justifications}
+    \label{tab:ML:downselection_justifications}
+    \centering
+    \begin{tabular}{|>{\raggedright}m{0.2\textwidth}|>{\raggedright}m{0.1\textwidth}|>{\arraybackslash}m{0.7\textwidth}|}
+        \cellcolor{gray!120}\textcolor{white}{\textbf{Evaluation Criteria}} & \cellcolor{gray!120}\textcolor{white}{\textbf{Weighted Score}} & \cellcolor{gray!120}\textcolor{white}{\textbf{Justification}} \\
+        \hline
+        \hline
+        Minimise Computational Intensity & 1 & While low computational effort is desirable, it is assumed that the hardware on which these models are deployed is sufficiently capable of processing and training on large data sets with minimal impact to operation times.\\
+        Minimise Bias/Variance Trade-off & 3 & High bias and low variance leads to underfitting, while low bias and high variance leads to overfitting.\\
+        Maximise Output Accuracy & 3 & This is the primary objective of the machine learning models.\\
+        Minimise Number of Model Hyperparameters & 2 & For each additional hyperparameter, the dimensional space for the optimisation process increases, requiring significantly more computational effort and thus time to find the global minimum.\\
+        Classification Capabilities & 1 & By considering additional functionality of the machine learning methods, multiple problems can be tackled through minor modification of existing architectures. \\
+        \hline
+    \end{tabular}
+
+\end{table}
